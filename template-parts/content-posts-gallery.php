@@ -2,9 +2,10 @@
 
     <header class="entry-header">
         <span class="dashicons dashicons-format-<?php echo get_post_format( $post->ID ) ?>"></span>
+        <p><?php esc_html_e( 'Enjoy this gallery post!!!' ); ?></p>
         
-            <h1><?php the_title(); ?></h1>
-           
+        <?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); ?>
+
     </header>
 
     <div class="entry-content">

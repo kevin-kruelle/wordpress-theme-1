@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
     <title>First Custom Wordpress Theme!</title>
 
     <?php wp_head(); ?>
@@ -38,14 +36,12 @@
                         <?php bloginfo( 'name' ); ?>
                     </a>
                 </p>
-                <!-- <p class="site-description">
-                    <?php bloginfo( 'description' ); ?>
-                </p> -->
+                <div>
+                    <a id="arrow-container" href="#primary"><p id="down-arrow">&#8595;</p></a>
+                </div>
             </div>
 
-            <div>
-                <a href="#main"><p id="down-arrow">"\f347"</p></a>
-            </div>
+            
 
         </header>
 

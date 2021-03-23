@@ -16,19 +16,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   margin: 0;
-    background-color: #cce2f0;
-    font-family: Raleway, "Open Sans", sans-serif;
+    background-color: rgb(242, 242, 242);
+    font-family: "Josephin Sans", "Open Sans", sans-serif;
   }
 
   #header-container {
     padding: .5rem .5rem .5rem 0;
     margin: -.5rem;
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     /* background-color: rgba(255, 255, 255); */
-    background-image: url('felix-mittermeier-ihbqhutI9x4-unsplash.jpg');
+    background-image: url('rabie-madaci-4iwG8QD17AE-unsplash.jpg');
     background-size: cover;
   }
+
+  #header-container-splash {
+    background-color: rgb(255, 254, 253);
+    height: 15vh;
+    background-size: cover;
+    margin-top: -1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #header-container-splash a {
+    color: rgb(255, 174, 87);
+  }
+
 
   #header-container-home {
     padding: .5rem .5rem .5rem 0;
@@ -44,11 +61,8 @@ body {
   
   h1, h2, h3, h4, h5, h6,
   .site-title {
-    font-family: "Roboto Condensed", "Varela Round", sans-serif;
-  }
+    font-family: Epilogue, "Varela Round", sans-serif;
 
-  .site-title {
-    padding: 1rem;
   }
   
   h1 {
@@ -64,7 +78,7 @@ body {
   }
 
   #header-container a {
-    color: #fff;
+    color: rgb(255, 161, 61);
   }
   
   a {
@@ -92,8 +106,23 @@ body {
   .site-title {
     font-size: 5rem;
     font-weight: bold;
-    margin: 7rem 0 1rem 0;
-    font-family: Anton, sans-serif;
+    text-align: center;
+    padding: .25rem;
+    border-bottom: 2px solid rgba(179, 177, 177, 0.5);
+    margin: 10rem 0 1rem 0;
+  }
+
+  .site-title-splash {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
+    font-family: "Cedarville Cursive";
+  }
+
+  .site-branding {
+    position: absolute;
+    left: 1.5rem;
   }
   
   #masthead,
@@ -110,24 +139,32 @@ body {
   }
   
   .main-navigation li a {
-    padding: 5px;
+    padding: 10px;
+    letter-spacing: .1rem;
   }
   
-  nav a:hover {
-    color: #000;
-  }
 
   #down-arrow {
-    color: rgb(216, 101, 0);
-    font-size: 3rem;
-    margin-top: -1.15rem;
+    color: rgb(255, 131, 23);
+    font-size: 7rem;
+    margin-top: 4rem;
     font-weight: 800;
-    width: 2rem;
     margin: 0 auto 0 auto;
+    animation: mymove 4s infinite;
+    width: 30px;
+  }
+
+  #arrow-container {
+    width: 2rem;
+  }
+
+  @keyframes mymove {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(80px); }
   }
 
   #down-arrow:hover {
-    color: rgb(172, 80, 0);
+    color: rgb(187, 187, 187);
   }
 
   
@@ -148,7 +185,7 @@ body {
   .main-navigation li:hover ul {
     display: block;
     position: absolute;
-    margin-left: -10px;
+    /* margin-left: -10px; */
     z-index: 100;
     background: #fff091;
     padding: 5px 10px;
@@ -156,25 +193,48 @@ body {
   
   .main-navigation li:hover ul li {
     display: block;
-    margin: .5rem 0;
+    /* margin: .5rem 0; */
   }
 
   /* For blog page */
   .entry-content {
     font-size: 1rem;
   }
+
+  /* .entry-header  {
+    width: 250px;
+    text-align: start;
+    letter-spacing: .1rem;
+    line-height: 1.35rem;
+    margin-right: 0;
+    color:rgb(94, 94, 94);
+  } */
+
+  
   
   #content {
     /* background: #fff; */
     margin: 20px auto;
-    padding: 20px;
-    width: 80%;
+    /* padding: 20px; */
+    /* width: 80%; */
     max-width: 1020px;
     border-radius: 5px;
     position: relative;
     overflow: auto;
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+  }
+
+  #content h1, #content h2, #content h3 {
+    color:rgb(255, 161, 61);
+  }
+
+  #content p {
+    color:rgb(79, 79, 79);
+  }
+
+  #content li, #content a {
+    color:rgb(126, 126, 126);
   }
   
   .single-portfolio #content,
@@ -253,6 +313,16 @@ body {
   #secondary {
     width: 25%;
     float: right;
+  }
+
+  .home #secondary {
+    width: 100%;
+    clear: both;
+  }
+
+  .home #secondary .widget {
+    width: 30%;
+    float: left;
   }
   
   #secondary h2 {
@@ -568,6 +638,22 @@ body {
         font-size: 32px;
         position: relative;
         top: -5px;
+    }
+
+
+    /* ====== 404 page ======== */
+
+    .main-404 {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      
+    }
+
+    .giphy-embed {
+      width: 760px;
+      height: 440px;
+      padding: 1rem;
     }
   
   /*--------------------------------------------------------------
