@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    <div id="portfolio-content-container">
     <header class="entry-header">
        <?php the_title( '<h2><a href="' . get_the_permalink() . '">', '</a></h2>'); ?>
         <a href="<?php the_permalink(); ?>">
@@ -10,5 +10,5 @@
     <div class="entry-content">
         <?php the_excerpt(); ?>
     </div>
-
+    </div>
 </article>

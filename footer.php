@@ -3,7 +3,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 
     <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wphierarchy' ) ); ?>">
-        <?php printf( esc_html__( 'Proudly powered by %s', 'wphierarchy' ), 'Kevvy_k :)' ); ?>
+        <?php printf( esc_html__( 'Powered by %s', 'wphierarchy' ), 'cups and cups of coffee :)' ); ?>
     </a>
 
 </footer>

@@ -23,7 +23,7 @@
             </p>
         </div>
 
-        <header id="masthead" class="site-header" role="banner">
+        <header class="site-header" role="banner">
 
             <nav id="site-navigation" class="main-navigation" role="navigation">
                 <?php 

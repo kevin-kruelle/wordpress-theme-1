@@ -10,7 +10,7 @@
                 <?php get_template_part( 'template-parts/content', 'none' ) ?>
 
             <?php endif; ?>
-                <p>Template: front-page.php</p>
+                <!-- <p>Template: front-page.php</p> -->
         </main>
         <?php get_sidebar( 'front-page' ); ?>
 

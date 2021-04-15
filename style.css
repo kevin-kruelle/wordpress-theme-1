@@ -14,6 +14,8 @@ This theme, like WordPress, is OK.... at best.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
+
 body {
   margin: 0;
     background-color: rgb(242, 242, 242);
@@ -28,11 +30,16 @@ body {
     /* background-color: rgba(255, 255, 255); */
     background-image: url('rabie-madaci-4iwG8QD17AE-unsplash.jpg');
     background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #dont-display-header {
+    display: none;
   }
 
   #header-container-splash {
     background-color: rgb(255, 254, 253);
-    height: 15vh;
+    height: 8rem;
     background-size: cover;
     margin-top: -1rem;
     padding: 1rem;
@@ -90,7 +97,7 @@ body {
     background: #222;
     /* padding: 10px; */
     border: 1px #777 solid;
-    color: #ededed;
+    /* color: #ededed; */
     font-family: monospace;
     font-size: 1rem;
   }
@@ -127,9 +134,13 @@ body {
   
   #masthead,
   footer.site-footer {
-    /* margin: 2rem auto 1rem; */
+    margin: 2rem auto 1rem;
     text-align: center;
     /* width: 100%; */
+  }
+
+  .site-footer a {
+    color:rgb(255, 174, 87);
   }
   
   .main-navigation li {
@@ -201,6 +212,7 @@ body {
     font-size: 1rem;
   }
 
+
   /* .entry-header  {
     width: 250px;
     text-align: start;
@@ -214,15 +226,17 @@ body {
   
   #content {
     /* background: #fff; */
-    margin: 20px auto;
-    /* padding: 20px; */
+    
+    padding-left: 60px; 
     /* width: 80%; */
-    max-width: 1020px;
+    /* max-width: 1020px; */
     border-radius: 5px;
     position: relative;
-    overflow: auto;
+    /* overflow: auto; */
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
   }
 
   #content h1, #content h2, #content h3 {
@@ -233,17 +247,27 @@ body {
     color:rgb(79, 79, 79);
   }
 
-  #content li, #content a {
-    color:rgb(126, 126, 126);
+  .posts-content p {
+    padding-right: 3rem;
   }
+
+  #content li, #content a {
+    color:rgb(68, 124, 189);
+  }
+
+  #content a:hover {
+    color: rgb(255, 161, 61);
+  }
+
   
   .single-portfolio #content,
   .page-template-template-splash #content,
   .page-id-1096 #content,
   .category-excerpt #content,
   .tag-wordpress #content {
-    width: 50%;
-    max-width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   
   #content article,
@@ -268,10 +292,16 @@ body {
     width: 100%;
     float: none;
   }
-  
-  article.post {
-    margin-bottom: 4rem;
+
+  .byline {
+    display: none;
   }
+
+  
+  
+  /* article.post {
+    margin-bottom: 4rem;
+  } */
   
   .author article.post {
     margin-bottom: 2rem;
@@ -647,8 +677,18 @@ body {
       display: flex;
       flex-direction: row;
       text-align: center;
-      
     }
+
+    .main-404 .display-404 {
+      letter-spacing: .1rem;
+      padding: 1rem;
+    }
+
+    .side-content-404 #search-bar {
+      line-break: auto;
+    }
+
+
 
     .giphy-embed {
       width: 760px;

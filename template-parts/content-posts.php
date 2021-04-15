@@ -9,7 +9,7 @@
             </div>
     </header>
 
-    <div class="entry-content">
+    <div class="entry-content posts-content">
         <?php the_excerpt(); ?>
     </div>
 
