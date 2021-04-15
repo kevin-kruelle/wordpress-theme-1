@@ -25,6 +25,18 @@ register_nav_menus( [
     'main-menu' => esc_html__( 'Main Menu', 'kevvy_k' )
 ]);
 
+// Add back button for single-portfolio pages.
+add_action( 'back_button', 'wpse221640_back_button' );
+function wpse221640_back_button()
+{
+    if ( wp_get_referer() )
+    {
+        $back_text = __( '&laquo; Back to Porfolio' );
+        $button    = "\n<button id='my-back-button' class='button' onclick='javascript:history.back()'>$back_text</button>";
+        echo ( $button );
+    }
+}
+
 // Setup Widget Areas
 function kevvy_k_widgets_init() {
     register_sidebar([

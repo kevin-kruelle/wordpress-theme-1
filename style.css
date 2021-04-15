@@ -523,6 +523,10 @@ body {
       padding: .5rem 1rem;
       width: 100%;
     }
+
+    .nf-form-fields-required {
+      display: none;
+    }
   
   
     /*--------------------------------------------------------------
