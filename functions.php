@@ -13,49 +13,49 @@ add_theme_support( 'customize-selective-refresh-widgets' );
 add_theme_support( 'starter-content' );
 
 //Load in our CSS
-function wphierarchy_enqueue_styles() {
+function kevvy_k_enqueue_styles() {
 
     wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', [], time(), 'all' );
 
 };
-add_action( 'wp_enqueue_scripts', 'wphierarchy_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'kevvy_k_enqueue_styles' );
 
 // Register Menu Locations
 register_nav_menus( [
-    'main-menu' => esc_html__( 'Main Menu', 'wphierarchy' )
+    'main-menu' => esc_html__( 'Main Menu', 'kevvy_k' )
 ]);
 
 // Setup Widget Areas
-function wphierarchy_widgets_init() {
+function kevvy_k_widgets_init() {
     register_sidebar([
-        'name'          => esc_html__( 'Main Sidebar', 'wphierarchy' ),
+        'name'          => esc_html__( 'Main Sidebar', 'kevvy_k' ),
         'id'            => 'main-sidebar',
-        'description'   => esc_html__( 'Add widgets for main sidebar here', 'wphierarchy' ),
+        'description'   => esc_html__( 'Add widgets for main sidebar here', 'kevvy_k' ),
         'before_widget' => '<section class="widget">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>'
     ]);
     register_sidebar([
-        'name'          => esc_html__( 'Page Sidebar', 'wphierarchy' ),
+        'name'          => esc_html__( 'Page Sidebar', 'kevvy_k' ),
         'id'            => 'page-sidebar',
-        'description'   => esc_html__( 'Add widgets for page sidebar here', 'wphierarchy' ),
+        'description'   => esc_html__( 'Add widgets for page sidebar here', 'kevvy_k' ),
         'before_widget' => '<section class="widget">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>'
     ]);
     register_sidebar([
-        'name'          => esc_html__( 'Front Page Widgets', 'wphierarchy' ),
+        'name'          => esc_html__( 'Front Page Widgets', 'kevvy_k' ),
         'id'            => 'front-page',
-        'description'   => esc_html__( 'Add widgets for the front page here', 'wphierarchy' ),
+        'description'   => esc_html__( 'Add widgets for the front page here', 'kevvy_k' ),
         'before_widget' => '<section class="widget">',
         'after_widget' => '</section>',
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>'
     ]);
 }
-add_action( 'widgets_init', 'wphierarchy_widgets_init' );
+add_action( 'widgets_init', 'kevvy_k_widgets_init' );
 
 
 ?>

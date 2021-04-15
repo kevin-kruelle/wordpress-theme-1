@@ -18,7 +18,7 @@
 
                     <p>
                         <a href="<?php the_field( 'url' ); ?>">
-                        <?php esc_html_e( 'Visit my Github', 'wphierarchy' ); ?>
+                        <?php esc_html_e( 'Visit my Github', 'kevvy_k' ); ?>
                     </p>
                 </div>
 

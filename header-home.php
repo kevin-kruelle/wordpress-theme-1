@@ -17,7 +17,7 @@
     <div id="header-container-home">
 
         <a href="#content" class="skip-link screen-reader-text">
-            <?php esc_html_e( 'Skip to content', 'wphierarchy' ); ?>
+            <?php esc_html_e( 'Skip to content', 'kevvy_k' ); ?>
         </a>
 
         <header id="masthead" class="site-header" role="banner">

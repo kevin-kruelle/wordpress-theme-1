@@ -2,8 +2,8 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 
-    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wphierarchy' ) ); ?>">
-        <?php printf( esc_html__( 'Powered by %s', 'wphierarchy' ), 'cups and cups of coffee :)' ); ?>
+    <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kevvy_k' ) ); ?>">
+        <?php printf( esc_html__( 'Powered by %s', 'kevvy_k' ), 'cups and cups of coffee :)' ); ?>
     </a>
 
 </footer>
